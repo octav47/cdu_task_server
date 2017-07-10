@@ -2,6 +2,10 @@
   "name": "cdu_task_server",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "6.10.3",
+    "npm": "3.10.10"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

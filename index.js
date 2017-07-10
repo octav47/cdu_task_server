@@ -5,4 +5,7 @@ let app = expring()
 let TaskController = require('./controllers/TaskController.js')
 TaskController.init(app)
 
-app.listen(80)
+let port = process.env.PORT || 8080;
+app.listen(port, function() {
+    console.log("Listening on " + port);
+});

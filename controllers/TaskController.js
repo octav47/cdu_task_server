@@ -16,19 +16,25 @@ taskController.setRequests([
     {
         url: '/getRegionsList',
         fn: (req, res) => {
-            res.send(RegionService.getRegionsList())
+            res.send(RegionService.getRegionsList(req.query.name))
         }
     },
     {
         url: '/getDistrictsByRegionID',
         fn: (req, res) => {
-            res.send(DistrictService.getDistrictsByRegionID(+req.query.id))
+            res.send(DistrictService.getDistrictsByRegionID(+req.query.id, req.query.name))
         }
     },
     {
         url: '/getCitiesByDistrictID',
         fn: (req, res) => {
-            res.send(CityService.getCitiesByDistrictID(+req.query.id))
+            res.send(CityService.getCitiesByDistrictID(+req.query.id, req.query.name))
+        }
+    },
+    {
+        url: '/getCityByID',
+        fn: (req, res) => {
+            res.send(CityService.getCityByID(+req.query.id))
         }
     }
 ])

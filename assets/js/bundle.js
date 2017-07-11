@@ -1,5 +1,1 @@
-impress().init()
-
-$('.layout-gallery').slick({
-    dots: true
-})
+!function(i){i().init(),$(".layout-gallery").slick({dots:!0})}(impress);

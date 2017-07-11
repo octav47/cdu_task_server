@@ -14,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "expring": "^1.0.4-alpha"
+    "expring": "^1.0.4-alpha",
+    "jade": "^1.11.0"
   }
 }
